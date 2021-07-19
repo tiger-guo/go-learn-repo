@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+
+// TestService 测试服务
+service Hello {
+  // Test 测试方法
+  rpc SayHello(HelloRequest) returns (HelloResponse) {};
+}
+// Request 请求结构
+message HelloRequest {
+  string name = 1;
+}
+// Response 响应结构
+message HelloResponse {
+  string message = 1;
+}
